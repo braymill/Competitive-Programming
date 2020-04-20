@@ -1,2 +1,2 @@
 # Competitive Programming
- A set of programs and examples from my competitive programming class at UT Austin.
+This is a repository for the various competitive programming problems I've completed.
