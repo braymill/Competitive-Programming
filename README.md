@@ -1,2 +1,2 @@
 # Competitive Programming
- A set of programs from my competitive programming class.
+ A set of programs and examples from my competitive programming class at UT Austin.
