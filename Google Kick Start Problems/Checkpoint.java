@@ -15,7 +15,7 @@ public class Checkpoint{
             }
             int count = 0;
             for (int i = 1; i < num - 1; i++){
-                if (current[i] > current[i-1]){
+                if (current[i] > current[i-1] && current[i] > current[i+1]){
                     count++;
                 }
             }
