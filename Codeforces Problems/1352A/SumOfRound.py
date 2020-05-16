@@ -14,8 +14,6 @@ def main():
                     places[a] = True
                     count += 1
                 a -= 1
-            if (i == 0):
-                print('\n')
             if (count <= 1):
                 print(1)
                 print(s)
