@@ -3,7 +3,7 @@ import java.util.*;
 public class BusRoutes {
 	public static void main(String[] args){
 		
-		//Google Kick Start Round B 2020 Question 2 - TODO: not complete
+		//Google Kick Start Round B 2020 Question 2 - solved one test set
 		
         Scanner s = new Scanner(System.in);
         int cases = s.nextInt();
