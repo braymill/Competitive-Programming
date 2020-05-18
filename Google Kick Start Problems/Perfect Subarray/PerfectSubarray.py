@@ -1,5 +1,7 @@
 import math
 
+# can fix TLE with python implementation?
+
 T = int(input())
 for i in range(1, T+1):
     l = int(input())
