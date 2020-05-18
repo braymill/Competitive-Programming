@@ -2,7 +2,7 @@ import java.util.*;
 
 public class PerfectSubarray {
 	
-	// google kick start round c, not done
+	// Google Kick Start Round C 2020
 	
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
