@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Checkpoint{
+public class BikeTour{
 	
 	//Google Kick Start Round B 2020 Question 1
 	
