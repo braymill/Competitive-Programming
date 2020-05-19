@@ -31,7 +31,7 @@ public class Candies {
             }
         }
 
-        // Find the func between a and b inclusive
+        // Find the sweetness score between a and b inclusive
         // TODO: problem is that its just adding up vals in array, need to change query formula to include sweetness score logic in here
         public long query(int a, int b) {
             if (b < l || r < a) {
@@ -70,7 +70,6 @@ public class Candies {
                 this.val = func(ar, l, r);
                 return this.val;
             }
-            // update finds GCD of the left and right node values recursively
             this.val = left.update(index, value) + right.update(index, value);
             return this.val;
         }
