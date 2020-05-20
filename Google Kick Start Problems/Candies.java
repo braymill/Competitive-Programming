@@ -31,16 +31,16 @@ public class Candies {
             }
         }
 
-        // Find the sweetness score between a and b inclusive
-        // TODO: problem is that its just adding up vals in array, need to change query formula to include sweetness score logic in here
-        public long query(int a, int b) {
+        // Find the func between a and b inclusive
+        // TODO: problem is that its just adding up vals in array, need to change formula
+        public long query(int a, int b, int count, int neg) {
             if (b < l || r < a) {
                 return DEFAULT;
             }
             if (a <= l && r <= b) {
                 return this.val;
             }
-            return left.query(a, b) + right.query(a, b);
+            return count * neg * left.query(a, b, count + 1, -neg) + (count + 1) * -neg * right.query(a, b, count + 2, -neg);
         }
         
         // sweetness score
@@ -70,6 +70,7 @@ public class Candies {
                 this.val = func(ar, l, r);
                 return this.val;
             }
+            // update finds GCD of the left and right node values recursively
             this.val = left.update(index, value) + right.update(index, value);
             return this.val;
         }
@@ -98,7 +99,7 @@ public class Candies {
         		if (type == UPDATE) {
         			root.update(a - 1, b);
         		} else if (type == QUERY) {
-        			ans += root.query(a - 1, b - 1);
+        			ans += root.query(a - 1, b - 1, 1, -1);
         		}
         	}
         	System.out.println("Case #" + i + ": " + ans);
