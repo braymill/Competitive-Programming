@@ -29,11 +29,7 @@ public class ThreatAnalysis {
                 } else {
                     double aCompare = other.aggro - this.aggro;
                     if (aCompare != 0){
-                        if (aCompare < 0){
-                            return -1;
-                        } else {
-                            return 1;
-                        }
+                        return aCompare;
                     } else {
                         return this.label.compareTo(other.label);
                     }
