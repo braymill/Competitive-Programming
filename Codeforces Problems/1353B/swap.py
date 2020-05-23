@@ -7,8 +7,9 @@ for i in range(T):
     b = sorted(b)
     s = 0
     while s < k:
-        if a[s] < b[len(b) - 1 - s]:
-            a[s] = b[len(b) - 1 - s]
+        bidx = len(b) - 1 - s
+        if a[s] < b[bidx]:
+            a[s] = b[bidx]
         s += 1
     c = 0
     for j in range(len(a)):
