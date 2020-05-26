@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include <iostream>
 using namespace std;
 
@@ -13,10 +14,13 @@ int main(){
         double num;
         double sum;
         for (int j = 0; j < n; j++){
+            cin >> a[j];
+        }
+        for (int j = 0; j < n; j++){
             sum = a[j];
             for (int k = j; k < n; k++){
                 if (k != j){
-                    sum += a[k]
+                    sum += a[k];
                 }
                 num = sqrt(sum);
                 if ((int) num == num){
@@ -25,6 +29,7 @@ int main(){
             }
         }
         string out = "Case #" + to_string(i) + ": " + to_string(total);
+        cout << out << "\n";
     }
 
 }
