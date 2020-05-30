@@ -16,6 +16,7 @@ int main(){
         for (int j = 0; j < n; j++){
             cin >> a[j];
         }
+         // need to change from brute force approach to pass set 2
         for (int j = 0; j < n; j++){
             sum = a[j];
             for (int k = j; k < n; k++){
