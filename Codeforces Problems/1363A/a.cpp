@@ -2,25 +2,24 @@
 #include <algorithm>
 using namespace std;
 
+
 int main(){
-    int t, n, x;
-    int mxn = 1000;
+    int t;
     cin >> t;
     for (int i = 0; i < t; i++){
-        int a[1000];
+        int n, x = 0;
         int sum = 0;
         cin >> n >> x;
         int odd, even = 0;
         for (int j = 0; j < n; j++){
-            int cur;
+            int cur = 0;
             cin >> cur;
-            a[j] = cur;
+            sum += cur;
             if (cur % 2 == 0){
                 even++;
             } else {
                 odd++;
             }
-            sum += cur;
         }
         if (n == x){
             if (sum % 2 == 1){
@@ -29,10 +28,19 @@ int main(){
                 cout << "No\n";
             }
         } else {
-            if (odd >= x && even >= 1){
-                cout << "Yes\n";
+            // x is even
+            if (x % 2 == 0){
+                if (even % 2 == 0 && odd % 2 == 1){
+                    cout << "Yes\n";
+                } else {
+                    cout << "No\n";
+                }
             } else {
-                cout << "No\n";
+                if (odd >= 1 || (even % 2 == 0 && odd % 2 == 1)){
+                    cout << "Yes\n";
+                } else {
+                    cout << "No\n";
+                }
             }
         }
     }
