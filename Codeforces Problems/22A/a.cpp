@@ -20,13 +20,9 @@ int main(){
     int o = 101;
     for (int i = 1; i < v.size(); i++){
         if (v.at(i) != v.at(i - 1)){
-            o = v.at(i);
-            break;
+            cout << v.at(i);
+            return 0;
         }
     }
-    if (o != 101){
-        cout << o;
-    } else {
-        cout << "NO";
-    }
+    cout << "NO";
 }
