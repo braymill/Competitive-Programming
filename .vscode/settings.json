@@ -4,6 +4,20 @@
         "iostream": "cpp",
         "string": "cpp",
         "vector": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "cmath": "cpp",
+        "*.tcc": "cpp",
+        "chrono": "cpp",
+        "complex": "cpp",
+        "random": "cpp",
+        "future": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "memory": "cpp",
+        "numeric": "cpp",
+        "ostream": "cpp",
+        "streambuf": "cpp",
+        "regex": "cpp",
+        "tuple": "cpp"
     }
 }
