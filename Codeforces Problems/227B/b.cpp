@@ -7,7 +7,6 @@ using namespace std;
 int main(){
     int n;
     cin >> n;
-    vector<int> v (n);
     unordered_map<int, int> orig;
     for (int i = 0; i < n; i++){
         int c;
@@ -21,12 +20,12 @@ int main(){
         cin >> q[i];
     }
     // go through the queries
-    ll va = 0;
+    ll v = 0;
     ll p = 0;
     for (int i = 0; i < m; i++){
         int cq = q[i];
-        va += orig[cq] + 1;
+        v += orig[cq] + 1;
         p += n - orig[cq];
     }
-    cout << va << " " << p;
+    cout << v << " " << p;
 }
